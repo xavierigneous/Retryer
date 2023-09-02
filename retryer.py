@@ -2,6 +2,10 @@ import functools
 import time
 
 def retryer(max_retries, delay, on_error=None):
+    # Params:
+    # * max_retries: The maximum number of times the function should be retried on error.
+    # * retry_delay: The delay in seconds between retry attempts.
+    # * on_error: A custom error handling function that will be executed when an error occurs.
     def decorator(func):
         @functools.wraps(func)
         def wrapper(*args, **kwargs):
