@@ -1,4 +1,4 @@
-# Retryr
+# Retryer
 [![PyPI version](https://badge.fury.io/py/retryer.svg)](https://badge.fury.io/py/retryer)
 
 A Python decorator that allows you to retry a function, and customise the action if it runs into error.
